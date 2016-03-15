@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{221B6D91-CA58-4EF9-B1A4-3E5CC1BE18E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GSP2016Mock</RootNamespace>
+    <AssemblyName>GSP2016Mock</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustInfo.Designer.cs">
+      <DependentUpon>CustInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DMedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DMedit.Designer.cs">
+      <DependentUpon>DMedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditKumihan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditKumihan.Designer.cs">
+      <DependentUpon>EditKumihan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayInsatsu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayInsatsu.Designer.cs">
+      <DependentUpon>LayInsatsu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderInfo.Designer.cs">
+      <DependentUpon>OrderInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OtherMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherMenu.Designer.cs">
+      <DependentUpon>OtherMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhotoEdit.Designer.cs">
+      <DependentUpon>PhotoEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoLocate1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhotoLocate1.Designer.cs">
+      <DependentUpon>PhotoLocate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoLocate2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhotoLocate2.Designer.cs">
+      <DependentUpon>PhotoLocate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhotoSelect.Designer.cs">
+      <DependentUpon>PhotoSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SctCmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SctCmt.Designer.cs">
+      <DependentUpon>SctCmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settlement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settlement.Designer.cs">
+      <DependentUpon>Settlement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CustInfo.resx">
+      <DependentUpon>CustInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DMedit.resx">
+      <DependentUpon>DMedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditKumihan.resx">
+      <DependentUpon>EditKumihan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayInsatsu.resx">
+      <DependentUpon>LayInsatsu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderInfo.resx">
+      <DependentUpon>OrderInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherMenu.resx">
+      <DependentUpon>OtherMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotoEdit.resx">
+      <DependentUpon>PhotoEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotoLocate1.resx">
+      <DependentUpon>PhotoLocate1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotoLocate2.resx">
+      <DependentUpon>PhotoLocate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotoSelect.resx">
+      <DependentUpon>PhotoSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SctCmt.resx">
+      <DependentUpon>SctCmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settlement.resx">
+      <DependentUpon>Settlement.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
